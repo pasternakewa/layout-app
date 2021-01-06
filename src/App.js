@@ -1,21 +1,21 @@
+import React from "react";
 import "./App.css";
-import Image from "./components/Image";
-import shoes from "./images/shoes.jpg";
+import Nav from "./components/Nav";
+import Products from "./components/Products";
+import About from "./components/About";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <div className="app__categories">
-        <div className="app__categories__gallery--1">
-          <Image title={shoes} elementNumber="1" />
-          <Image title={shoes} elementNumber="2" />
-          <Image title={shoes} elementNumber="3" />
-          <Image title={shoes} elementNumber="4" />
-          <Image title={shoes} elementNumber="5" />
-          <Image title={shoes} elementNumber="6" />
-        </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route path="/products" component={Products} />
+          <Route path="/about" component={About} />
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
