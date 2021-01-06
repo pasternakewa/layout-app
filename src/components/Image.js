@@ -1,11 +1,10 @@
 import React from "react";
 
-export default function Image({ title, elementNumber }) {
+export default function Image({ src, name, category }) {
   return (
-    <figure
-      className={`app__categories__gallery--1__element--${elementNumber}`}
-    >
-      <img src={title} alt={title}></img>
+    <figure className="gallery__elements-item">
+      <img src={src} alt={name}></img>
+      <figcaption>{category}</figcaption>
     </figure>
   );
 }

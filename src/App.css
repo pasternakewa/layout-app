@@ -56,7 +56,7 @@ nav {
   list-style: none;
 }
 
-.app__categories {
+.gallery {
   background-color: rgb(200, 152, 245);
   width: 80%;
   margin: 2rem auto;
@@ -66,17 +66,21 @@ nav {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 24.6vw);
-  padding: 1rem;
+  /* grid-template-rows: repeat(3, 24.6vw);
+  padding: 1rem; */
+}
+
+.gallery__elements-item {
+  width: 22vw;
 }
 
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: none;
 }
 
-.gallery__element--1 {
+/* .gallery__element--1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
@@ -104,4 +108,4 @@ img {
 .gallery__element--6 {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-}
+} */
