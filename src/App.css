@@ -18,12 +18,27 @@ body {
   width: 100%;
 }
 
+a {
+  color: #12121d;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  position: relative;
+  bottom: -1px;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(235, 171, 188);
+  background: #ebabbc;
   background: linear-gradient(
     0deg,
     rgba(235, 171, 188, 1) 0%,
