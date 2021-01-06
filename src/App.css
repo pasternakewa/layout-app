@@ -5,8 +5,16 @@
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+
 .App {
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -14,10 +22,15 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(235,171,188);
-  background: linear-gradient(0deg, rgba(235,171,188,1) 0%, rgba(249,218,226,1) 100%);
-  color: #12121D ;
-  }
+  background: rgb(235, 171, 188);
+  background: linear-gradient(
+    0deg,
+    rgba(235, 171, 188, 1) 0%,
+    rgba(249, 218, 226, 1) 100%
+  );
+  color: #12121d;
+  position: sticky;
+}
 
 .nav-links {
   width: 45%;
@@ -25,13 +38,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  }
-  
-body {
-  width: 100%;
-  height: 100vh;
-  margin: 2rem;
-  padding: 0px;
 }
 
 .app__categories {
