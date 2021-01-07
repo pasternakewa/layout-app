@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function Image({ src, name, category }) {
+export default function Image({ category, id, name, src }) {
   return (
-    <figure className="gallery__elements-item">
-      <img src={src} alt={name}></img>
-      <figcaption>{category}</figcaption>
+    <figure className="gallery-item" key={id}>
+      <img className="gallery-item__img" src={src} alt={name}></img>
+      <figcaption className="gallery-item__img-caption">{category}</figcaption>
     </figure>
   );
 }

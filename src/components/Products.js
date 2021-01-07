@@ -26,20 +26,17 @@ export default function Products() {
 
   console.log("uniqueItems", uniqueItems);
 
-  console.log("itemsstate", items);
   return (
     <div>
       <h1>Products</h1>
       <div className="gallery">
         {uniqueItems.map((item) => (
-          <>
-            <Image
-              name={item.name}
-              src={item.image_link}
-              category={item.product_type}
-            />
-            {/* <p>{item.product_type}</p> */}
-          </>
+          <Image
+            name={item.name}
+            src={item.image_link}
+            category={item.product_type}
+            id={item.id}
+          />
         ))}
       </div>
     </div>
