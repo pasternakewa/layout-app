@@ -1,9 +1,9 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "./Image";
 
 export default function Products() {
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetchItems();
@@ -13,11 +13,17 @@ export default function Products() {
   }, []);
 
   const fetchItems = async () => {
-    const fetchedData = await fetch(
-      "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
-    );
-    const items = await fetchedData.json();
-    setItems(items);
+    try {
+      const fetchedData = await fetch(
+        "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+      );
+      const items = await fetchedData.json();
+      setItems(items);
+      setIsLoading(false);
+    } catch (e) {
+      console.log("error:", e);
+      setIsLoading(false);
+    }
   };
 
   let uniqueItems = [
@@ -30,6 +36,7 @@ export default function Products() {
     <div>
       <h1>Products</h1>
       <div className="gallery">
+        {isLoading && <h4>Loading products...</h4>}
         {uniqueItems.map((item) => (
           <Image
             name={item.name}
