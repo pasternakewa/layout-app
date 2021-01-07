@@ -57,7 +57,6 @@ nav {
 }
 
 .gallery {
-  /* background-color: rgb(200, 152, 245); */
   width: 60%;
   margin: 2rem auto;
   display: grid;
@@ -77,12 +76,21 @@ nav {
   z-index: -1;
   position: relative;
   width: 100%;
+  transition: 0.5s ease-in-out;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.gallery-item__img:hover {
+  -webkit-filter: blur(1.6px);
+  filter: blur(1.6px);
 }
 
 .gallery-item__img-caption {
   background-color: rgba(61, 61, 61, 0.65);
   width: 100%;
-  margin-top: -2.4em;
+  line-height: 32px;
+  margin-top: -3.2em;
   float: right;
   text-align: center;
   color: white;
