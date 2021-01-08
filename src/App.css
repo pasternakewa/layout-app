@@ -138,7 +138,7 @@ nav {
 @media (max-width: 414px) {
   .gallery {
     width: 90%;
-    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 0.2rem;
     row-gap: 0.6rem;
   }
@@ -149,7 +149,8 @@ nav {
   }
 
   .gallery-item__img-caption {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 20px;
     margin-top: -2.8em;
   }
 }
