@@ -34,7 +34,7 @@ export default function Products() {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1 className="gallery-title">Products</h1>
       <div className="gallery">
         {isLoading && <h4>Loading products...</h4>}
         {uniqueItems.map((item) => (

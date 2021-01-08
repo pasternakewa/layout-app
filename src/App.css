@@ -10,6 +10,7 @@ body {
   height: 100vh;
   padding: 0px;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .App {
@@ -54,6 +55,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.gallery-title {
+  margin-top: 6px;
+  position: relative;
+  left: 20%;
 }
 
 .gallery {
@@ -111,6 +118,11 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .gallery-title {
+    position: relative;
+    left: 40%;
+  }
+
   .gallery {
     width: 80%;
     display: grid;
@@ -136,6 +148,11 @@ nav {
 }
 
 @media (max-width: 414px) {
+  .gallery-title {
+    position: relative;
+    left: 30%;
+  }
+
   .gallery {
     width: 90%;
     grid-template-columns: repeat(2, 1fr);
