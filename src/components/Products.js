@@ -7,9 +7,7 @@ export default function Products() {
 
   useEffect(() => {
     fetchItems();
-    return () => {
-      setItems([]);
-    };
+    setItems([]);
   }, []);
 
   const fetchItems = async () => {
@@ -29,8 +27,6 @@ export default function Products() {
   let uniqueItems = [
     ...new Map(items.map((item) => [item.product_type, item])).values()
   ];
-
-  console.log("uniqueItems", uniqueItems);
 
   return (
     <div>
