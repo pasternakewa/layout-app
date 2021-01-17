@@ -67,6 +67,10 @@ main {
   align-content: center;
 }
 
+.gallery-container{
+  width: 100%;
+}
+
 .gallery-title {
   margin-bottom: 1rem;
 }
@@ -115,4 +119,27 @@ main {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+  @media (min-width: 736px) {
+  nav{
+font-size: x-large;
+min-height: 80px;
+  }
+
+  .container {
+    max-width: 600px;
+    width: 600px;
+  }
+
+.gallery{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item__img-caption {
+  line-height: 32px;
+  font-size: 1.2rem;
+  margin-top: -4rem;
+}
 }
