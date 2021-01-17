@@ -143,3 +143,19 @@ min-height: 80px;
   margin-top: -4rem;
 }
 }
+
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 800px;
+    width: 800px;
+  }
+
+.gallery{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-item__img-caption {
+  margin-top: -4.5rem;
+}
+}
