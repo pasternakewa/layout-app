@@ -133,7 +133,12 @@ footer {
   height: 100px;
   top: calc(100vh - 100px);
   width: 100vw;
-  background-color: red;
+  background: #ebabbc;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 218, 226, 1) 0%,
+    rgba(249, 218, 226, 1) 100%
+  );
   color: white;
   text-align: center;
 }
