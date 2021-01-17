@@ -63,6 +63,7 @@ nav {
 main {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -125,6 +126,16 @@ main {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+footer {
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
+  width: 100vw;
+  background-color: red;
+  color: white;
+  text-align: center;
 }
 
 @media (min-width: 667px) {
