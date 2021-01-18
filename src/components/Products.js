@@ -24,7 +24,7 @@ export default function Products() {
     }
   };
 
-  let uniqueItems = [
+  let getUniqueCategoryProducts = [
     ...new Map(items.map((item) => [item.product_type, item])).values()
   ];
 
@@ -33,7 +33,7 @@ export default function Products() {
       <h1 className="gallery-title">Products</h1>
       <div className="gallery">
         {isLoading && <h4>Loading products...</h4>}
-        {uniqueItems.map((item) => (
+        {getUniqueCategoryProducts.map((item) => (
           <Image
             name={item.name}
             src={item.image_link}
