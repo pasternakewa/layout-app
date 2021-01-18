@@ -33,11 +33,7 @@ a:active {
   align-items: center;
   min-height: 10vh;
   background: #ebabbc;
-  background: linear-gradient(
-    0deg,
-    rgba(235, 171, 188, 1) 0%,
-    rgba(249, 218, 226, 1) 100%
-  );
+  background: linear-gradient(0deg, #ebabbc 0%, rgba(249, 218, 226, 1) 100%);
   color: #12121d;
   position: sticky;
   margin-bottom: 16px;
@@ -206,4 +202,47 @@ footer {
   .gallery-item__img-caption {
     margin-top: -4.5rem;
   }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
+  width: 100vw;
+  background: #ebabbc;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.footer-title {
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  fill: white;
 }
