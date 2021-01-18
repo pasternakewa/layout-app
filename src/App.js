@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Nav from "./components/Nav";
+import Navigation from "./components/Navigation";
 import Products from "./components/Products";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -10,11 +10,15 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/products" component={Products} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <Navigation />
+        <main>
+          <div className="container">
+            <Switch>
+              <Route path="/products" component={Products} />
+              <Route path="/about" component={About} />
+            </Switch>
+          </div>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>
