@@ -165,6 +165,10 @@ footer {
   border-bottom: 1px white solid;
 }
 
+.footer-socials a:visited {
+  fill: white !important;
+}
+
 .footer-socials {
   display: flex;
   justify-content: space-around;
