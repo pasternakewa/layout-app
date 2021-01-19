@@ -160,7 +160,8 @@ footer {
   color: white;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-socials a:hover {
   border-bottom: 1px white solid;
 }
 
