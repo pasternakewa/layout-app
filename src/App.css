@@ -201,9 +201,9 @@ footer {
   .container {
     max-width: 600px;
     width: 600px;
-  }
-
-  .gallery {
+     {
+      width: 800px;
+    }
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
@@ -231,6 +231,10 @@ footer {
   .gallery-item__img-caption {
     margin-top: -4.5rem;
   }
+
+  footer {
+    width: 800px;
+  }
 }
 
 @media (min-width: 1365px) {
@@ -248,5 +252,9 @@ footer {
 
   .gallery-item__img-caption {
     margin-top: -4.5rem;
+  }
+
+  footer {
+    width: 1100px;
   }
 }
