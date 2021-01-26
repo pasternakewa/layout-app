@@ -70,6 +70,7 @@ main {
   align-content: center;
 }
 
+/* ___Products___ */
 .gallery-container {
   width: 100%;
 }
@@ -123,6 +124,33 @@ main {
   color: white;
   font-weight: bold;
 }
+/* ___Products___ */
+
+/* ___About___ */
+.about-container {
+  max-width: 330px;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.about-section__img {
+  max-width: 100%;
+}
+
+.about-section__text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* ___About___ */
 
 footer {
   position: sticky;

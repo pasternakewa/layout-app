@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react'
 
-export default function Image({ category, id, name, src }) {
-  return (
-    <figure className="gallery-item" key={id}>
-      <img className="gallery-item__img" src={src} alt={name}></img>
-      <figcaption className="gallery-item__img-caption">{category}</figcaption>
-    </figure>
-  );
+const Image = ({src, name, className})=> {
+    return (
+        <div >
+            <img src={src} alt={name} className={className} />
+        </div>
+    )
 }
+
+export default Image

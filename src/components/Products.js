@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Image from "./Image";
+import GalleryImage from "./GalleryImage";
 
 export default function Products() {
   const [items, setItems] = useState([]);
@@ -34,7 +34,7 @@ export default function Products() {
       <div className="gallery">
         {isLoading && <h4>Loading products...</h4>}
         {getUniqueCategoryProducts.map((item) => (
-          <Image
+          <GalleryImage
             name={item.name}
             src={item.image_link}
             category={item.product_type}
