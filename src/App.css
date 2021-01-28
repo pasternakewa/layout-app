@@ -48,6 +48,7 @@ nav {
 .title {
   font-weight: bold;
 }
+
 .nav-links {
   width: 45%;
   display: flex;
@@ -68,6 +69,13 @@ main {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.home-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  font-size: 20px;
 }
 
 .gallery-container {
@@ -201,9 +209,10 @@ footer {
   .container {
     max-width: 600px;
     width: 600px;
-     {
-      width: 800px;
-    }
+  }
+  .gallery {
+    width: 800px;
+
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
