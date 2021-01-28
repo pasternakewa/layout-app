@@ -149,6 +149,11 @@ main {
   text-align: justify;
   text-justify: inter-word;
 }
+
+hr {
+  border: hidden;
+  border-top: 3px double #bbb;
+}
 /* ___About___ */
 
 footer {
