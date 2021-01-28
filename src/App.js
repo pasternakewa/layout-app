@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./components/Navigation";
+import Home from "./components/Home";
 import Products from "./components/Products";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -14,6 +15,7 @@ function App() {
         <main>
           <div className="container">
             <Switch>
+              <Route path="/" exact component={Home} />
               <Route path="/products" component={Products} />
               <Route path="/about" component={About} />
             </Switch>
