@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navigation = () => (
   <div className="nav-container">
     <nav>
-      <p className="title">MAKEUP SHOWROOM</p>
+      <NavLink to="/" activeStyle={{ borderBottom: "0px solid" }}>
+        <p className="title">MAKEUP SHOWROOM</p>
+      </NavLink>
       <ul className="nav-links">
         <li>
           <Link to="/products">Products</Link>
