@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Products() {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isError, setIsError] = useState(null)
+  const [isError, setIsError] = useState();
 
   useEffect(() => {
     fetchItems();
@@ -21,18 +21,23 @@ export default function Products() {
       setItems(items);
       setIsLoading(false);
     } catch (e) {
-      setIsError(e.toString())
+      setIsError(e.toString());
       setIsLoading(false);
     }
   };
 
   let getUniqueCategoryProducts = [
-    ...new Map(items?.map((item) => [item.product_type, item])).values()
+    ...new Map(items?.map((item) => [item.product_type, item])).values(),
   ];
   return (
     <div className="gallery-container">
       <h1 className="gallery-title">Products</h1>
-        {(isError || (!isLoading && items.length===0)) && <p>Problem loading data. {isError} Get back to <Link to="/">home page</Link>.</p>}
+      {(isError || (!isLoading && items.length === 0)) && (
+        <p>
+          Problem loading data. {isError} Get back to{" "}
+          <Link to="/">home page</Link>.
+        </p>
+      )}
       <div className="gallery">
         {isLoading && <h4>Loading products...</h4>}
         {getUniqueCategoryProducts?.map((item) => (
