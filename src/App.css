@@ -78,8 +78,6 @@ main {
   font-size: 20px;
 }
 
-/* ___Products___ */
-
 .gallery-container {
   width: 100%;
 }
@@ -133,9 +131,7 @@ main {
   color: white;
   font-weight: bold;
 }
-/* ___Products___ */
 
-/* ___About___ */
 .about-container {
   width: 100%;
   display: flex;
@@ -163,7 +159,6 @@ hr {
   border: hidden;
   border-top: 3px double #bbb;
 }
-/* ___About___ */
 
 .footer-container {
   display: flex;
