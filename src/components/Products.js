@@ -38,8 +38,8 @@ export default function Products() {
         <h4>Loading products...</h4>
       ) : showErrorMsg ? (
         <p>
-          Problem loading data. {isError} Get back to{" "}
-          <Link to="/">home page</Link>.
+          Problem loading data. {isError} Get back to
+          <Link to="/"> home page</Link>.
         </p>
       ) : getUniqueCategoryProducts ? (
         <div className="gallery">
