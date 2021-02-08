@@ -29,26 +29,30 @@ export default function Products() {
   let getUniqueCategoryProducts = [
     ...new Map(items?.map((item) => [item.product_type, item])).values(),
   ];
+  const showErrorMsg = isError || items.length === 0;
+
   return (
     <div className="gallery-container">
       <h1 className="gallery-title">Products</h1>
-      {(isError || (!isLoading && items.length === 0)) && (
+      {isLoading ? (
+        <h4>Loading products...</h4>
+      ) : showErrorMsg ? (
         <p>
           Problem loading data. {isError} Get back to{" "}
           <Link to="/">home page</Link>.
         </p>
-      )}
-      <div className="gallery">
-        {isLoading && <h4>Loading products...</h4>}
-        {getUniqueCategoryProducts?.map((item) => (
-          <GalleryImage
-            name={item.name}
-            src={item.image_link}
-            category={item.product_type}
-            id={item.id}
-          />
-        ))}
-      </div>
+      ) : getUniqueCategoryProducts ? (
+        <div className="gallery">
+          {getUniqueCategoryProducts.map((item) => (
+            <GalleryImage
+              name={item.name}
+              src={item.image_link}
+              category={item.product_type}
+              id={item.id}
+            />
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }
