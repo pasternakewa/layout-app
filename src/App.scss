@@ -1,4 +1,5 @@
 @import "./styles/Navigation";
+@import "./styles/Home";
 @import "./styles/Products";
 @import "./styles/About";
 @import "./styles/Footer";
@@ -59,6 +60,15 @@ a:active {
     max-width: 600px;
     width: 600px;
   }
+
+  .home-section {
+    max-width: 600px;
+    width: 600px;
+    img {
+      max-width: 600px;
+    }
+  }
+
   .gallery {
     width: 800px;
 
@@ -92,6 +102,17 @@ a:active {
     width: 800px;
   }
 
+  .home-section {
+    max-width: 800px;
+    width: 800px;
+    img {
+      max-width: 800px;
+    }
+    & > * {
+      padding: 16px;
+    }
+  }
+
   .gallery {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -110,8 +131,16 @@ a:active {
     width: 1100px;
   }
   .container {
-    max-width: 110px;
-    width: 110px;
+    max-width: 1100px;
+    width: 1100px;
+  }
+
+  .home-section {
+    max-width: 1100px;
+    width: 1100px;
+    img {
+      max-width: 1100px;
+    }
   }
 
   .gallery {
