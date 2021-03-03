@@ -1,0 +1,29 @@
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #ebabbc;
+  background: linear-gradient(0deg, #ebabbc 0%, rgba(249, 218, 226, 1) 100%);
+  color: #12121d;
+  position: sticky;
+  margin-bottom: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.nav-links {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
