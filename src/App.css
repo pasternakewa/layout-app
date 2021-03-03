@@ -241,10 +241,6 @@ footer {
   border-bottom: 1px white solid;
 }
 
-.footer-socials a:visited {
-  fill: white !important;
-}
-
 .footer-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +248,10 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   fill: white;
+}
+
+.footer-socials a:visited {
+  fill: white !important;
 }
 
 *,

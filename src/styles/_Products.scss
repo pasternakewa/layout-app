@@ -39,11 +39,10 @@ main {
 .gallery-item {
   float: right;
   z-index: 0;
-}
-
-.gallery-item:active {
-  position: relative;
-  top: 1px;
+  &:active {
+    position: relative;
+    top: 1px;
+  }
 }
 
 .gallery-item__img {
@@ -56,11 +55,10 @@ main {
   transition: 0.3s ease-in-out;
   -webkit-filter: blur(0px);
   filter: blur(0px);
-}
-
-.gallery-item__img:hover {
-  -webkit-filter: blur(1.6px);
-  filter: blur(1.6px);
+  &:hover {
+    -webkit-filter: blur(1.6px);
+    filter: blur(1.6px);
+  }
 }
 
 .gallery-item__img-caption {
