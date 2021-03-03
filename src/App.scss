@@ -80,6 +80,8 @@ main {
 
 .gallery-container {
   width: 100%;
+  display: grid;
+  justify-content: center;
 }
 
 .gallery-title {
