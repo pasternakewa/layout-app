@@ -3,6 +3,7 @@
 @import "./styles/Products";
 @import "./styles/About";
 @import "./styles/Footer";
+@import "./styles/helpers/variables";
 
 *,
 *::after,
@@ -19,13 +20,13 @@ body {
 }
 
 a {
-  color: #12121d;
+  color: $textColor;
   outline: none;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 1px #12121d solid;
+  border-bottom: 1px $textColor solid;
 }
 
 a:active {
@@ -40,7 +41,6 @@ a:active {
   .footer-socials {
     grid-row: 1 / 3;
     grid-column: 3 / 4;
-    flex-direction: column;
   }
 }
 
@@ -71,7 +71,6 @@ a:active {
 
   .gallery {
     width: 800px;
-
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }

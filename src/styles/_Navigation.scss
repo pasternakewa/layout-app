@@ -1,19 +1,20 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
 .nav-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: #ebabbc;
-  background: linear-gradient(0deg, #ebabbc 0%, rgba(249, 218, 226, 1) 100%);
-  color: #12121d;
+  background: $mainBarColor;
+  background: linear-gradient(0deg, $mainBarColor, 0%, #f9dae2 100%);
+  color: $textColor;
   position: sticky;
   margin-bottom: 16px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include centerSpaceBetween();
 }
 
 .title {
@@ -21,9 +22,7 @@ nav {
 }
 
 .nav-links {
+  @include centerSpaceBetween();
   width: 45%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style: none;
 }

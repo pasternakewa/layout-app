@@ -1,3 +1,6 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
 main {
   display: flex;
   justify-content: center;
@@ -23,8 +26,7 @@ main {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include gridColumnsTemplate(repeat(2, 1fr));
   column-gap: 0.8rem;
   row-gap: 0.8rem;
 }
@@ -62,6 +64,6 @@ main {
   margin-top: -3rem;
   float: right;
   text-align: center;
-  color: white;
+  color: $backgroundColor;
   font-weight: bold;
 }

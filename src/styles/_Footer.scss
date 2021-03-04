@@ -1,3 +1,5 @@
+@import "./helpers/variables";
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -6,14 +8,13 @@
   height: 100px;
   top: calc(100vh - 100px);
   width: 100vw;
-  background: #ebabbc;
-  color: white;
+  background: $mainBarColor;
+  color: $backgroundColor;
   text-align: center;
 }
 
 footer {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  @include gridColumnsTemplate(3fr 1fr 1fr);
   column-gap: 8px;
   align-items: center;
 }
@@ -29,20 +30,20 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   a {
-    color: white;
+    color: $backgroundColor;
   }
 }
 
 .footer-links a:hover,
 .footer-socials a:hover {
-  border-bottom: 1px white solid;
+  border-bottom: 1px $backgroundColor solid;
 }
 
 .footer-socials {
   display: flex;
   justify-content: space-around;
-  fill: white;
+  fill: $backgroundColor;
   a:visited {
-    fill: white !important;
+    fill: $backgroundColor !important;
   }
 }

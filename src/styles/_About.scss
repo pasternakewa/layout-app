@@ -7,8 +7,7 @@
 }
 
 .about-section {
-  display: grid;
-  grid-template-columns: 1fr;
+  @include gridColumnsTemplate(1fr);
   row-gap: 1rem;
 }
 
