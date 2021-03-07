@@ -14,11 +14,10 @@ function App() {
         <Navigation />
         <main>
           <div className="container">
-            <div>trolololo</div>
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/products" component={Products} />
-              <Route path="/about" component={About} />
+              <Route path="/makeup-showroom" exact component={Home} />
+              <Route path="/makeup-showroom/products" component={Products} />
+              <Route path="/makeup-showroom/about" component={About} />
             </Switch>
           </div>
         </main>
