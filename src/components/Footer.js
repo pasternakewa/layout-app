@@ -7,10 +7,10 @@ const Footer = () => (
       <p className="footer-title">MAKEUP SHOWROOM</p>
       <ul className="footer-links">
         <li>
-          <Link to="/products">Products</Link>
+          <Link to="/makeup-showroom/products">Products</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/makeup-showroom/about">About</Link>
         </li>
       </ul>
       <div className="footer-socials">
