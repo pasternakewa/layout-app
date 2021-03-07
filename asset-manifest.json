@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/makeup-showroom/static/css/main.6a9c3249.chunk.css",
-    "main.js": "/makeup-showroom/static/js/main.35654b18.chunk.js",
-    "main.js.map": "/makeup-showroom/static/js/main.35654b18.chunk.js.map",
+    "main.js": "/makeup-showroom/static/js/main.309e3335.chunk.js",
+    "main.js.map": "/makeup-showroom/static/js/main.309e3335.chunk.js.map",
     "runtime-main.js": "/makeup-showroom/static/js/runtime-main.7bd506b8.js",
     "runtime-main.js.map": "/makeup-showroom/static/js/runtime-main.7bd506b8.js.map",
     "static/js/2.dc12ac45.chunk.js": "/makeup-showroom/static/js/2.dc12ac45.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.7bd506b8.js",
     "static/js/2.dc12ac45.chunk.js",
     "static/css/main.6a9c3249.chunk.css",
-    "static/js/main.35654b18.chunk.js"
+    "static/js/main.309e3335.chunk.js"
   ]
 }
