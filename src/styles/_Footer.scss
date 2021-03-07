@@ -1,0 +1,49 @@
+@import "./helpers/variables";
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
+  width: 100vw;
+  background: $mainBarColor;
+  color: $backgroundColor;
+  text-align: center;
+}
+
+footer {
+  @include gridColumnsTemplate(3fr 1fr 1fr);
+  column-gap: 8px;
+  align-items: center;
+}
+
+.footer-title {
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a {
+    color: $backgroundColor;
+  }
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  border-bottom: 1px $backgroundColor solid;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-around;
+  fill: $backgroundColor;
+  a:visited {
+    fill: $backgroundColor !important;
+  }
+}

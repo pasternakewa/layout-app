@@ -1,0 +1,12 @@
+@import "./helpers/mixins";
+
+.home-section {
+  @include gridColumnsTemplate(1fr);
+  row-gap: 2rem;
+  font-size: 20px;
+  max-width: 330px;
+  width: 330px;
+  img {
+    max-width: 330px;
+  }
+}

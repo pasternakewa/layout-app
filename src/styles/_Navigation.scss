@@ -1,0 +1,28 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: $mainBarColor;
+  background: linear-gradient(0deg, $mainBarColor, 0%, #f9dae2 100%);
+  color: $textColor;
+  position: sticky;
+  margin-bottom: 16px;
+}
+
+nav {
+  @include centerSpaceBetween();
+}
+
+.title {
+  font-weight: bold;
+}
+
+.nav-links {
+  @include centerSpaceBetween();
+  width: 45%;
+  list-style: none;
+}
