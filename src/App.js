@@ -14,6 +14,7 @@ function App() {
         <Navigation />
         <main>
           <div className="container">
+            <div>trolololo</div>
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/products" component={Products} />
