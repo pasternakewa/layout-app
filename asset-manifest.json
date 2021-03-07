@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/makeup-showroom/static/css/main.6a9c3249.chunk.css",
+    "main.css": "/makeup-showroom/static/css/main.3c688346.chunk.css",
     "main.js": "/makeup-showroom/static/js/main.309e3335.chunk.js",
     "main.js.map": "/makeup-showroom/static/js/main.309e3335.chunk.js.map",
     "runtime-main.js": "/makeup-showroom/static/js/runtime-main.7bd506b8.js",
@@ -10,7 +10,7 @@
     "static/js/3.6ef2a642.chunk.js": "/makeup-showroom/static/js/3.6ef2a642.chunk.js",
     "static/js/3.6ef2a642.chunk.js.map": "/makeup-showroom/static/js/3.6ef2a642.chunk.js.map",
     "index.html": "/makeup-showroom/index.html",
-    "static/css/main.6a9c3249.chunk.css.map": "/makeup-showroom/static/css/main.6a9c3249.chunk.css.map",
+    "static/css/main.3c688346.chunk.css.map": "/makeup-showroom/static/css/main.3c688346.chunk.css.map",
     "static/js/2.dc12ac45.chunk.js.LICENSE.txt": "/makeup-showroom/static/js/2.dc12ac45.chunk.js.LICENSE.txt",
     "static/media/brushes.2d36def3.jpg": "/makeup-showroom/static/media/brushes.2d36def3.jpg",
     "static/media/makeup_red_bg.0020e6f5.jpg": "/makeup-showroom/static/media/makeup_red_bg.0020e6f5.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.7bd506b8.js",
     "static/js/2.dc12ac45.chunk.js",
-    "static/css/main.6a9c3249.chunk.css",
+    "static/css/main.3c688346.chunk.css",
     "static/js/main.309e3335.chunk.js"
   ]
 }
