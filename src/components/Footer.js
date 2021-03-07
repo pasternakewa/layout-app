@@ -45,9 +45,7 @@ const Footer = () => (
           </svg>
         </a>
       </div>
-      <div className="footer-copyright">
-        Copyright &#169; {new Date().getFullYear()}
-      </div>
+      <div className="footer-copyright">Copyright &#169; 2021</div>
     </footer>
   </div>
 );
